@@ -13,13 +13,13 @@
   <IconUrl DefaultValue="https://placehold.co/32x32" />
   <SupportUrl DefaultValue="https://example.com/support" />
   <AppDomains>
-    <AppDomain>https://ваш-сайт.com</AppDomain>
+    <AppDomain>https://Graph1te123.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Presentation" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://ваш-сайт.com/index.html" />
+    <SourceLocation DefaultValue="https://Graph1te123.github.io/slide-library/index.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -70,8 +70,8 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://placehold.co/80x80" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://ваш-сайт.com/commands.html" />
-        <bt:Url id="Taskpane.Url" DefaultValue="https://ваш-сайт.com/index.html" />
+        <bt:Url id="Commands.Url" DefaultValue="https://Graph1te123.github.io/slide-library/commands.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://Graph1te123.github.io/slide-library/index.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started" />
