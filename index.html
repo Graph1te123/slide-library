@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Slide Library</h1>
+        <div class="search-area">
+            <input type="text" id="searchInput" placeholder="Search by title or tag..." autocomplete="off">
+            <select id="categoryFilter">
+                <option value="all">All categories</option>
+                <option value="Business">Business</option>
+                <option value="Analytics">Analytics</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Product">Product</option>
+            </select>
+        </div>
+        <div id="slidesGrid" class="slides-grid">
+            <div class="loading">Loading library...</div>
+        </div>
+    </div>
+</body>
+</html>
