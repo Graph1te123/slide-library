@@ -6,29 +6,29 @@ Office.onReady(() => {
 });
 
 async function loadCatalog() {
+    const grid = document.getElementById('slidesGrid');
+    grid.innerHTML = '<div class="loading">Загрузка каталога...</div>';
     try {
         const response = await fetch('catalog.json');
-        if (!response.ok) throw new Error('Failed to load catalog');
+        if (!response.ok) throw new Error(`HTTP ${response.status} - ${response.statusText}`);
         slidesData = await response.json();
+        if (!slidesData.length) throw new Error('Каталог пуст');
         renderSlides(slidesData);
-    } catch (error) {
-        document.getElementById('slidesGrid').innerHTML = `<div class="loading">Error loading catalog: ${error.message}</div>`;
+    } catch (err) {
+        grid.innerHTML = `<div class="loading" style="color:red;">Ошибка загрузки: ${err.message}</div>`;
     }
 }
 
 function renderSlides(slides) {
     const grid = document.getElementById('slidesGrid');
     if (!slides.length) {
-        grid.innerHTML = '<div class="loading">No slides found</div>';
+        grid.innerHTML = '<div class="loading">Нет слайдов</div>';
         return;
     }
     grid.innerHTML = slides.map(slide => `
-        <div class="slide-card" data-id="${slide.id}">
+        <div class="slide-card">
             <div class="preview">
-                ${slide.previewBase64 ? 
-                    `<img src="${slide.previewBase64}" alt="${slide.title}">` : 
-                    `<div class="placeholder">📄 No preview</div>`
-                }
+                ${slide.previewBase64 ? `<img src="${slide.previewBase64}" alt="${slide.title}">` : '<div class="placeholder">📄 Нет превью</div>'}
             </div>
             <div class="card-info">
                 <div class="card-title">${escapeHtml(slide.title)}</div>
@@ -41,43 +41,31 @@ function renderSlides(slides) {
 
     document.querySelectorAll('.insert-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            e.stopPropagation();
             const slideId = btn.getAttribute('data-id');
             const slide = slidesData.find(s => s.id == slideId);
             if (slide && slide.slideBase64) {
                 insertSlide(slide.slideBase64, slide.title);
             } else {
-                console.error("No base64 data for slide", slideId);
+                alert('Ошибка: нет данных слайда');
             }
         });
     });
 }
 
 function insertSlide(base64Data, title) {
+    if (!Office.context || !Office.context.document) {
+        alert('Ошибка: Office API не инициализирован');
+        return;
+    }
     Office.context.document.insertSlidesFromBase64(base64Data, {
         format: Office.FileType.Compressed
     }, (result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
-            console.error("Insert failed", result.error.message);
+            alert('Ошибка вставки: ' + result.error.message);
         } else {
-            console.log(`Slide "${title}" inserted`);
+            alert('Слайд "' + title + '" вставлен!');
         }
     });
-}
-
-document.getElementById('searchInput').addEventListener('input', filterSlides);
-document.getElementById('categoryFilter').addEventListener('change', filterSlides);
-
-function filterSlides() {
-    const query = document.getElementById('searchInput').value.toLowerCase();
-    const category = document.getElementById('categoryFilter').value;
-    const filtered = slidesData.filter(slide => {
-        const matchesSearch = slide.title.toLowerCase().includes(query) || 
-                              slide.tags.some(tag => tag.toLowerCase().includes(query));
-        const matchesCategory = category === 'all' || slide.category === category;
-        return matchesSearch && matchesCategory;
-    });
-    renderSlides(filtered);
 }
 
 function escapeHtml(str) {
