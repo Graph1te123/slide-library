@@ -3,48 +3,64 @@
     "id": 1,
     "title": "Q4 Business Review",
     "category": "Business",
-    "tags": ["review", "quarterly", "executive"],
-    "previewBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkAQMAAABK7GJkAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABhJREFUGBntwTEBAAAAwiD7p14IX2AAAABcCQq9AAHjS9qGAAAAAElFTkSuQmCC",
+    "tags": ["review", "quarterly", "executive", "strategy"],
+    "previewBase64": "https://placehold.co/300x180/1F3A5F/FFFFFF?text=Q4+Business+Review",
     "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
   },
   {
     "id": 2,
     "title": "Market Trends 2025",
     "category": "Analytics",
-    "tags": ["market", "trends", "data"],
-    "previewBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkAQMAAABK7GJkAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABhJREFUGBntwTEBAAAAwiD7p14IX2AAAABcCQq9AAHjS9qGAAAAAElFTkSuQmCC",
+    "tags": ["market", "trends", "data", "forecast"],
+    "previewBase64": "https://placehold.co/300x180/4F8EF7/FFFFFF?text=Market+Trends+2025",
     "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
   },
   {
     "id": 3,
     "title": "Marketing Strategy",
     "category": "Marketing",
-    "tags": ["strategy", "campaign", "growth"],
-    "previewBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkAQMAAABK7GJkAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABhJREFUGBntwTEBAAAAwiD7p14IX2AAAABcCQq9AAHjS9qGAAAAAElFTkSuQmCC",
+    "tags": ["strategy", "campaign", "growth", "branding"],
+    "previewBase64": "https://placehold.co/300x180/FF8C42/FFFFFF?text=Marketing+Strategy",
     "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
   },
   {
     "id": 4,
-    "title": "Product Roadmap",
+    "title": "Product Roadmap 2025",
     "category": "Product",
-    "tags": ["roadmap", "product", "planning"],
-    "previewBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkAQMAAABK7GJkAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABhJREFUGBntwTEBAAAAwiD7p14IX2AAAABcCQq9AAHjS9qGAAAAAElFTkSuQmCC",
+    "tags": ["roadmap", "product", "planning", "features"],
+    "previewBase64": "https://placehold.co/300x180/0F172A/FFFFFF?text=Product+Roadmap",
     "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
   },
   {
     "id": 5,
-    "title": "Sales Dashboard",
+    "title": "Sales Performance Dashboard",
     "category": "Business",
-    "tags": ["sales", "kpi", "dashboard"],
-    "previewBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkAQMAAABK7GJkAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABhJREFUGBntwTEBAAAAwiD7p14IX2AAAABcCQq9AAHjS9qGAAAAAElFTkSuQmCC",
+    "tags": ["sales", "kpi", "dashboard", "revenue"],
+    "previewBase64": "https://placehold.co/300x180/10B981/FFFFFF?text=Sales+Dashboard",
     "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
   },
   {
     "id": 6,
-    "title": "Customer Insights",
+    "title": "Customer Insights Report",
     "category": "Analytics",
-    "tags": ["customer", "insights", "data"],
-    "previewBase64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkAQMAAABK7GJkAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABhJREFUGBntwTEBAAAAwiD7p14IX2AAAABcCQq9AAHjS9qGAAAAAElFTkSuQmCC",
+    "tags": ["customer", "insights", "behavior", "data"],
+    "previewBase64": "https://placehold.co/300x180/6366F1/FFFFFF?text=Customer+Insights",
+    "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "id": 7,
+    "title": "Go-To-Market Plan",
+    "category": "Marketing",
+    "tags": ["gtm", "launch", "strategy", "growth"],
+    "previewBase64": "https://placehold.co/300x180/F97316/FFFFFF?text=Go+To+Market",
+    "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
+  },
+  {
+    "id": 8,
+    "title": "OKR Planning Deck",
+    "category": "Product",
+    "tags": ["okr", "goals", "planning", "metrics"],
+    "previewBase64": "https://placehold.co/300x180/111827/FFFFFF?text=OKR+Planning",
     "slideBase64": "UEsDBBQAAAAAAGZmZ2EAAAAAAAAAAAAAAAAAAAAA"
   }
 ]
