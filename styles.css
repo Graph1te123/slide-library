@@ -106,12 +106,13 @@ body {
 
 .insert-btn {
     width: 100%;
-    background: #1F3A5F;
+    background: linear-gradient(135deg, #1F3A5F, #4F8EF7);
     color: white;
     border: none;
     padding: 8px;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .insert-btn:hover {
